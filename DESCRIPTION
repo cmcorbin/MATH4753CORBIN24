@@ -1,0 +1,11 @@
+Package: MATH4753CORBIN24
+Type: Package
+Title: MATH 4753 Lab functions
+Version: 0.1.0
+Author: Connor Corbin
+Maintainer: Connor Corbin <cmcorbin204@gmail.com>
+Description: MATH 4753 lab functions and other selections.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
