@@ -7,5 +7,5 @@
 #'
 #' @examples
 myquad <- function(x){
-  x^2 - 5 * x + 6
+  x^2 - 5 * x + 7
 }
