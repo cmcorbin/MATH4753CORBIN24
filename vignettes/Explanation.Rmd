@@ -1,0 +1,56 @@
+---
+title: "What the Package Does"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{What the Package Does}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753CORBIN24)
+```
+
+# Introduction
+
+This package was created by Connor Corbin for the class MATH-4753 at the University of Oklahoma. This package contains a multitude of different functions that were utilized throughout the class in lab assignments. The data set fire.R in the package is one of many data sets that I used in the class. This is also the data set that I studied and analyzed in my project report. 
+
+# fire.r
+fire data set which contains 15 entries comparing the distance in miles of a fire from the nearest fire station and the damage in thousands of dollars caused by the fire
+```{r}
+head(fire)
+```
+
+
+# ntickets.R function
+This function calculates the number of tickets a airline should sell based on the probability of passengers actually showing up for their flight, the number of seats on the plane, and the desired likelihood of overbooking. 
+```{r}
+ntickets(N=200, gamma=0.01, p=0.95)
+```
+
+
+# myhypersim.R function
+This function runs iter number of iterations where there are N total marbles, r white marbles, and n marbles drawn. The bar graph produced showcases the probability of different success numbers based off the results of the simulation
+```{r}
+myhyper(iter=100, N=15, r=8, n=5)
+```
+
+# scatterhist.R
+This function creates a histogram and scatter plot side by side allowing for comparison of the two. 
+```{r}
+scatterhist(fire$DISTANCE, fire$DAMAGE, xlab="Distance", ylab="Damage")
+```
+
+# myncurve.R
+This function calculates the probabilty of a function that is contained between a and -inf
+```{r}
+myncurve(5, 4, 2)
+```
+
